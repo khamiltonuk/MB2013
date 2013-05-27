@@ -1,4 +1,4 @@
 MB2013
 ======
 
-shoe shopping
+shoe shopping ipad app displaying products

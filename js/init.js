@@ -31,22 +31,7 @@ $(document).ready(function() {
 		'y' : false
 	});
 	
-	$slide.find($('ul.boots-list li')).each(function() {
-
-		if ($(this).children('a').length == 1 ) {
-			$(this).css({
-				'width' : 200
-			});
-		}
-
-		if ($(this).children('a').length == 2 || $(this).children('a').length == 3) {
-			$(this).css({
-				'width' : 370
-			});
-		}
-	});
-	
-	$slide.find($('ul.normal li')).each(function() {
+	$slide.find($('#normal li')).each(function() {
 
 		if ($(this).children('a').length == 1 || $(this).children('a').length == 2) {
 			$(this).css({

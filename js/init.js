@@ -17,6 +17,22 @@ $(document).ready(function() {
 		});
 	});
 	
+	$slide.find($('#normal li')).each(function() {
+		var product_images = $(this).children('a').length,
+			product_half = Math.round(product_images / 2)
+			callback = product_half * 15,
+			product_width = product_half * 200 - callback;
+
+		$(this).css({
+			'width' : product_width
+		});
+	});
+
+	var accum_width = 0;
+	$listitems.each(function() {
+		accum_width += $(this).width() + 2;
+	});
+	
 	var body_class = $.cookie('body_class');
     if(body_class) {
         $('body').attr('class', body_class);
@@ -29,44 +45,6 @@ $(document).ready(function() {
 	$slide.kinetic({
 		'triggerHardware' : true,
 		'y' : false
-	});
-	
-	$slide.find($('#normal li')).each(function() {
-
-		if ($(this).children('a').length == 1 || $(this).children('a').length == 2) {
-			$(this).css({
-				'width' : 200
-			});
-		}
-
-		if ($(this).children('a').length == 3 || $(this).children('a').length == 4) {
-			$(this).css({
-				'width' : 370
-			});
-		}
-
-		if ($(this).children('a').length == 5 || $(this).children('a').length == 6) {
-			$(this).css({
-				'width' : 500
-			});
-		}
-
-		if ($(this).children('a').length == 7 || $(this).children('a').length == 8) {
-			$(this).css({
-				'width' : 700
-			});
-		}
-
-		if ($(this).children('a').length >= 9) {
-			$(this).css({
-				'width' : 870
-			});
-		}
-
-	});
-	var accum_width = 0;
-	$listitems.each(function() {
-		accum_width += $(this).width() + 2;
 	});
 
 	$mylist.css({

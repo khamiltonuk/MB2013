@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!--prevent zoom on mobile device-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<title>Manolo Blahnik - Stocklist</title>
+		<!-- Makes App ful screen -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Custom Icon on the Homescreen-->
+		<link rel="apple-touch-icon" sizes="72x72" href="images/touch-icon-iphone.jpg" />
+	
+		<!-- Custom Icon on the Homescreen-->
+		<link rel="apple-touch-icon" sizes="72x72" href="images/touch-icon-iphone.jpg" />
+		
+		<!-- original style sheet -->
+		<link rel="stylesheet" href="css/Styles.css" />
+	
+	</head><!-- end of document head -->
+	<body class="firstPage">
+		<div class="stockistContainer">
+			<p><a class="whiteLink" href="javascript:this.location = 'highheels.html'">Shoes</a></p>
+			<a href="javascript:this.location = 'index.html'"><img class="ManoloBlahnikLogo" src="images/logo.jpg" /></a>
+			<h1 class="whiteLink">Stockists</h1>
+			<nav>
+                <ul>
+                    <a class="stockist" href="#Harrods"><li>Harrods<br/><small>Knightsbridge</small></li></a>
+                    	<div style="display: none;"> 
+							<div id="Harrods" style="width:900px;">
+								<div class="productImg">
+									<h1>Harrods</h1>
+									<img class="locationImage" src="images/harrods.jpg" alt="harrods"/>
+									<span class="description">87-135 Brompton Road, Knightsbridge, SW1X 7XL</span>
+								</div>
+								<div class="productInfo">
+									<span class="telephoneNumber">Customer Services: +44 (0) 20 7730 123</span>
+									<p>&nbsp;</p>
+									<p>Opening Hours: Monday to Saturday 10am - 8pm, Sunday 11am - 8pm</p>
+									<p>&nbsp;</p>
+									<span class="Availablity">Tube: The nearest tube station is Knightsbridge on the Piccadilly line.</span>
+								</div><!-- end of product info -->
+							</div>
+						</div><!-- end of hidding div -->
+                    <a class="stockist" href="#Liberty"><li>Liberty<br/><small>Regent Street</small></li></a>
+                    	<div style="display: none;"> 
+							<div id="Liberty" style="width:900px;">
+								<div class="productImg">
+									<h1>Liberty</h1>
+									<img class="locationImage" src="images/liberty.jpg" alt="liberty"/>
+									<span class="description">Regent Street, London W1B 5AH </span>
+								</div>
+								<div class="productInfo">
+									<span class="telephoneNumber">Customer Services: +44 (0)20 7734 1234 </span>
+									<p>&nbsp;</p>
+									<p>Opening Hours: Monday - Saturday 10am - 9pm, Sunday 12pm - 8pm</p>
+									<p>&nbsp;</p>
+									<span class="Availablity">Tube: The nearest tube station Oxford Circus on the Central, Bakerloo and Victoria lines</span>
+								</div><!-- end of product info -->
+							</div>
+						</div><!-- end of hidding div -->
+                    <a class="stockist" href="#OldChurchStreet"><li>49-51 Old Church Street<br/><small>Chelsea</small></li></a>
+                    <div style="display: none;"> 
+							<div id="OldChurchStreet" style="width:900px;">
+								<h1>49-51 Old Church Street</h1>
+									<div class="productImg">
+									<img class="locationImage" src="images/oldchurchstreet.jpg" alt="Eufrasia"/>
+									<span class="description">49-51 Old Church Street, London, SW3 5B</span>
+								</div>
+								<div class="productInfo">
+									<span class="telephoneNumber">Telephone: +44 (0)20 7352 8622 </span>
+									<p>&nbsp;</p>
+									<p>Opening Hours: Monday - Saturday 10.30am - 5pm, Sunday closed</p>
+									<p>&nbsp;</p>
+									<span class="Availablity">Tube: The nearest tube station is South Kensington on the Circle, District and Piccadilly line</span>
+								</div><!-- end of product info -->
+							</div>
+						</div><!-- end of hidding div -->
+                </ul>
+		    </nav><!-- end of nav -->
+		    
+	 	</div><!-- end of stockist container -->
+	 	
+	 	<!-- jQuery direct from google's CDN -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+		<script>//fall back if internet drops
+			!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');</script>
+		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+			<script src="js/jquery.kinetic.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript" src="js/jquery.preloader.js" ></script>
+			<!-- <script type="text/javascript" src="js/init.js"></script>	 -->
+		<script  type="text/javascript" >
+		$(document).ready(function() {
+			$(".stockist").fancybox({
+				'titleShow' : 'true',
+				'scrolling' : 'no', // prevent wide content from scrolling
+			});
+		});
+		</script>
+		
+	</body>
+</html>

@@ -197,17 +197,21 @@ ul.Availablity a {
 	padding: 0px;
 	margin: 0px auto;
 }
-.topNav nav ul li a, .introContainer nav ul li, a.whiteLink {/*width:32.5%;*/
+.topNav nav ul li a {
+	display: block;
+	padding: 10px 0px;
+	color: #b4afa9;
+}
+.topNav nav ul li, .introContainer nav ul li, a.whiteLink {/*width:32.5%;*/
 	width: 24.3%;
 	border: solid 1px #b4afa9;
-	padding: 10px 0px;
 	float: left;
+	padding: 0px;
+	color: #b4afa9;
 	margin: 0px 2px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #b4afa9;
-	display: block;
 	-webkit-transition-property: color, background;
 	-webkit-transition-duration: 0.5s, 0.5s;
 	-webkit-transition-timing-function: linear, ease-in;

@@ -178,11 +178,11 @@ ul.Availablity a {
 	width: 100%;
 	height: 60px;
 }
-.topNav nav, .bottomNav nav {
+.topNav nav {
 	width: 90%;
 	margin: 5px auto;
 }
-.topNav nav ul, .bottomNav nav ul, .introContainer nav ul, .stockistContainer nav ul {
+.topNav nav, .introContainer nav ul, .stockistContainer nav ul {
 	list-style: none;
 	padding: 0px;
 	margin: 0px auto;

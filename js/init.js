@@ -10,9 +10,8 @@ $(document).ready(function() {
 	})
 	$.each($listitemsGet, function(idx, itm) { $mylist.append(itm); });
 	
-	$listitems.find('small').hide();
 	$("#showPrices").click(function() {
-		$listitems.find('small').fadeToggle("slow", "linear", function() {
+		$listitems.find('div').slideToggle("slow", "linear", function() {
 			$('#showPrices').text($(this).is(':hidden') ? 'Show Prices' : 'Hide prices');
 		});
 	});
@@ -161,6 +160,4 @@ $(function() {
 		$('#show-shoe').text('She Shoe Photo');
 	});
 	
-	
-
 });

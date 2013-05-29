@@ -1,6 +1,13 @@
-*{padding:0px;margin:0px;}
+* {
+	padding:0px;margin:0px;
+}
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: #b4afa9;
+}
 body {
 	background: #000000;
+	color: #b4afa9;
 	font: 18px/27px 'CicleFina', serif;
 	-webkit-user-select: none; /* disable cut copy paste */
 	-webkit-touch-callout: none; /* disable callout, image save panel */
@@ -9,10 +16,6 @@ body {
 .backgroundWhite{background:white;}
 .preloader{background:url('../images/spacer.gif') no-repeat 0px 0px transparent;}
 
-a, a:visited, a:hover {
-	text-decoration: none;
-	color: #000000;
-}
 #slides {
 	margin: 0px auto;
 	margin-top: 140px;
@@ -22,7 +25,6 @@ a, a:visited, a:hover {
 	overflow-y: hidden;
 	position: relative;
 	height: 540px;
-	color: #b4afa9;
 	/*display: none;*/
 }
 #slides ul {
@@ -42,25 +44,13 @@ a, a:visited, a:hover {
 	height: 160px;
 	margin: 0px 1px 0px;
 }
-#slides ul li .boots  {
-	float:left;
-	overflow:hidden; /* this is important */
-}
-#slides ul li .boots img {
-	height: 360px;
-	width: 360px;
-	margin:0px -100px 0px -100px;
-}
-#slides ul li a .boots {
-	margin-right: 10px;
-}
 h2 {
 	font-size: 22px;
 	margin-bottom: 5px;
 	padding: 5px 0px;
 }
-#slides li small {
-	display: block;
+#slides li div {
+	display: none;
 	padding: 5px 0px 10px 0px;
 	margin: 0px;
 }

@@ -18,9 +18,8 @@ $(document).ready(function() {
 	
 	$slide.find($('#normal li')).each(function() {
 		var product_images = $(this).children('a').length,
-			product_half = Math.round(product_images / 2)
-			callback = product_half * 15,
-			product_width = product_half * 200 - callback;
+			product_half = Math.round(product_images / 2),
+			product_width = product_half * 190;
 
 		$(this).css({
 			'width' : product_width
@@ -99,7 +98,7 @@ $(function() {
 	
 			var src = $li.find('img').attr('src');
 			var alt = $li.find('img').attr('alt');
-			var price = $(this).siblings('small').text();
+			var price = $(this).siblings('div').text();
 			var product = $(this).siblings('h2').text();
 			
 			seeShoe = $li.find('.see-shoe').attr('src'); 
